@@ -1,0 +1,22 @@
+﻿{
+  "name": "KarmaDemo",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-karma": "^0.12.2",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-jasmine": "^0.3.8",
+    "karma-ng-html2js-preprocessor": "*"
+    
+  },
+  "dependencies": {}
+}
