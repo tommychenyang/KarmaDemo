@@ -19,12 +19,11 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      //options: {
-      //  jshintrc: true
-      //},
-      gruntfile: {
-        src: 'Script/controller/**/*.js'
-      }
+      options: {
+            
+                reporter: './node_modules/jshint-stylish'
+            },
+            target: ['Script/**/*.js']
     }
     
   });
