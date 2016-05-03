@@ -4,3 +4,9 @@ C:\New folder (2)\KarmaDemo\KarmaDemo\KarmaDemo\bin\KarmaDemo.pdb
 C:\New folder (2)\KarmaDemo\KarmaDemo\KarmaDemo\obj\Debug\KarmaDemo.dll
 C:\New folder (2)\KarmaDemo\KarmaDemo\KarmaDemo\obj\Debug\KarmaDemo.pdb
 C:\New folder (2)\KarmaDemo\KarmaDemo\KarmaDemo\obj\Debug\KarmaDemo.csprojResolveAssemblyReference.cache
+C:\Work\KarmaDemo\KarmaDemo\bin\KarmaDemo.dll.config
+C:\Work\KarmaDemo\KarmaDemo\bin\KarmaDemo.dll
+C:\Work\KarmaDemo\KarmaDemo\bin\KarmaDemo.pdb
+C:\Work\KarmaDemo\KarmaDemo\obj\Debug\KarmaDemo.csprojResolveAssemblyReference.cache
+C:\Work\KarmaDemo\KarmaDemo\obj\Debug\KarmaDemo.dll
+C:\Work\KarmaDemo\KarmaDemo\obj\Debug\KarmaDemo.pdb

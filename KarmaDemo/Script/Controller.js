@@ -5,23 +5,30 @@ var controllers=angular.module('Controller',[]);
 controllers.controller('listCtrl',['$scope','GundamRepo','Gundam','$location','$filter',function($scope,GundamRepo,Gundam,$location,$filter){
     $scope.content="blahblah";
     $scope.gundams=GundamRepo.query();
- 
+    $scope.change = function (str) {
+        $scope.content = str;
+    };
     $scope.goto=function(id){
-
+        $scope.testresult = 1;
         var selected=$filter('filter')($scope.gundams,{_id:id},true);
 
+        $scope.testresult = selected;
         if(selected.length>0)
         {
+           
             Gundam.set( selected[0]);
             $location.path('/gundam/'+id);
         }
         else {
-           // throw new MyException("no data selected");
+           
             console.log("data error");
         }
     };
+    $scope.redirect = function (url) {
+        $location.path(url+'');
+    }
 }])
-.controller('dashboardCtrl',['$scope','GundamRepo','Gundam',function($scope,GundamRepo,Gundam){
+.controller('dashboardCtrl',['$scope','Gundam',function($scope,Gundam){
         $scope.getdata=function(){
             $scope.selected=Gundam.data;
 
