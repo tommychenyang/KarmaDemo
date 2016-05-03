@@ -24,13 +24,20 @@ module.exports = function(grunt) {
                 reporter: './node_modules/jshint-stylish'
             },
             target: ['Script/**/*.js']
+    },
+     
+    watch: {
+        src: {
+            files: ['Script/**/*.js'],
+            tasks:['karma']
+        }
     }
     
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
-  //grunt.loadNpmTasks('grunt-msbuild');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-karma');
 

@@ -5,10 +5,7 @@ var controllers=angular.module('Controller',[]);
 controllers.controller('listCtrl',['$scope','GundamRepo','Gundam','$location','$filter',function($scope,GundamRepo,Gundam,$location,$filter){
     $scope.content="blahblah";
     $scope.gundams=GundamRepo.query();
-   // $scope.getdata=function(){
-   //     $scope.selected=GundamRepo.get({id:'5707d49fedeafe982da7becd'});
-   //     Gundam.set($scope.selected);
-   // };
+ 
     $scope.goto=function(id){
 
         var selected=$filter('filter')($scope.gundams,{_id:id},true);
