@@ -63,12 +63,12 @@ describe("GundamApp Controller", function () {
            
         }));
 
-        it("check scope.content initialization",function(){
+        it("check scope.content has been correctly initialized",function(){
             expect(scope.content).toEqual('blahblah');
 
         });
 
-        it("should get data when service called", function () {
+        it("$scope.gundams should contains data from Repository", function () {
 
 
             // expect(typeof scope.gundams).toEqual('object');
@@ -77,7 +77,7 @@ describe("GundamApp Controller", function () {
             expect(Gundamrepo.query).toHaveBeenCalled();
 
         });
-        it("should redirect to right page ", function () {
+        it("should $scope.redirect() redirect to right url ", function () {
             
             var url = '/somepage';
             
@@ -86,7 +86,7 @@ describe("GundamApp Controller", function () {
             expect(location.path).toHaveBeenCalledWith(url);
 
         });
-        it("should $scope.goto redirecto to right url", inject(function () {
+        it("should $scope.goto() redirecto to right url", inject(function () {
             var id = 1;
             
             spyOn(location, 'path');
